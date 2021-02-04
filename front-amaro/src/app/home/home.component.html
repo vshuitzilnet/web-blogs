@@ -1,0 +1,70 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <p class="font-weight-light">Home | Admin | Blogs</p>
+
+    <div class="row">
+        <div class="col-12 col-md-5">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Autor</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Select</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Creation Date</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        <div class="col-6 col-md-3"> 
+                <button type="button" class="btn btn-secondary" routerLink="/create-blog">Create new blog</button>
+        </div>
+    </div>
+    
+    <br>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Date</th>
+            <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            </tr>
+            <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
+<app-footer></app-footer>

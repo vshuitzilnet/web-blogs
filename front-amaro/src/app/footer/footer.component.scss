@@ -1,0 +1,250 @@
+//variables for responsives sizes
+
+$screen-xxsm-max: 319px; 
+$screen-xsm-min: 320px;
+$screen-sm-min: 700px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$screen-xlg-min: 1900px;
+
+
+$screen-xsh-max: 480px;
+$screen-sh-min: 1000px;
+$screen-lh-min: 1060px;
+$screen-xlh-min: 1090px;
+$screen-xxlh-min: 1300px;
+
+
+
+@mixin xxsm {
+    @media (max-width: $screen-xxsm-max) {
+        @content;
+    }
+}
+@mixin xsm {
+    @media (min-width: $screen-xsm-min) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: $screen-sm-min) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: $screen-md-min) {
+        @content;
+    }
+}
+
+@mixin lg{
+    @media (min-width: $screen-lg-min) {
+        @content;
+    }
+    
+}
+
+@mixin xlg{
+    @media (min-width: $screen-xlg-min) {
+        @content;
+    }
+    
+}
+
+//Responsive for height
+@mixin xs-h {
+    @media (max-height: $screen-xsh-max) {
+        @content; 
+    }
+}
+
+@mixin sm-h {
+    @media (min-height: $screen-sh-min) {
+        @content; 
+    }
+}
+
+@mixin lg-h {
+    @media (min-height: $screen-lh-min) {
+        @content; 
+    }
+}
+
+@mixin xlg-h {
+    @media (min-height: $screen-xlh-min) {
+        @content; 
+    }
+}
+
+@mixin xxlg-h {
+    @media (min-height: $screen-xxlh-min) {
+        @content; 
+    }
+}
+
+//Responsive using height and width
+
+@mixin xsm-wh {
+    @media (max-height: $screen-xsh-max) and (min-width: $screen-sm-min) {
+        @content; 
+    }
+}
+
+@mixin md-wh {
+    @media (min-height: $screen-sh-min) and (min-width: $screen-lg-min) {
+        @content; 
+    }
+}
+
+
+.container-fluid{
+    background-color: #0170D1;
+    height: 25vh;
+    text-align: center;
+
+    @include xs-h{
+        height: auto;
+    }
+}
+
+.title{
+    font-size: 250%;
+    font-weight: bolder;
+}
+
+.subtitle{
+    font-size: x-small;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 2rem;
+
+    @include xsm{
+        font-size: small;
+    }
+
+    @include sm{
+        font-size: small;
+    }
+
+    @include md{
+        font-size: large;
+    }
+
+    
+
+    @include md-wh{
+        font-size: x-large; 
+    }
+
+    
+
+    @include xs-h{
+        padding-bottom: 0rem;
+    }
+
+    @include sm-h{
+        font-size: larger;
+    }
+
+    @include xlg{
+        font-size: 180%; 
+    }
+
+    @include xxlg-h{
+        font-size: x-large;
+    }
+
+    
+}
+
+.body{
+    font-size: small;
+    text-align: left;
+    font-weight: 300;
+}
+
+.text-style{
+    color: white; 
+    font-family: Helvetica, sans-serif;   
+}
+
+.container-icons-networking{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: center;
+
+    @include xsm{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+   
+    @include md{
+        padding-left: 4rem;
+        padding-right: 4rem;
+        
+    }
+
+    @include xs-h{
+        padding-bottom: 2rem;
+        padding-left: 11rem;
+        padding-right: 11rem;
+        width: 100vw;
+        
+    }
+
+}
+
+.icons-networking{
+    width: 18%;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+
+    @include xsm{
+        width: 21%;
+    }
+
+    @include sm{
+        width: 7%;
+    }
+    @include md{
+        width: 5%;  
+    }
+
+
+    @include lg{
+        width: 4%;
+    }
+
+    @include xlg{
+        width: 4%;
+    }
+
+
+    @include xs-h{
+        width: 50px;
+    }
+
+    @include sm-h{
+        width: 10%;
+    }
+
+    
+   
+
+    @include md-wh{
+        width: 5%;
+        padding: 1rem;
+    }
+
+    @include xxlg-h{
+        width: 8%;
+    }
+
+
+}
+

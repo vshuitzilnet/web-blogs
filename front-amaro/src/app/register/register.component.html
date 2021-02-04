@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 margin-register"> 
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="ExampleL Vanesa Soltero" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label for="inputUser">Username</label>
+                    <input type="text" class="form-control" id="inputUser" placeholder="Example: vsoltero" [(ngModel)]="user" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                
+                
+                <button type="submit" class="btn btn-primary" (click)= "createUser()">Register</button>
+                <button type="button" class="btn btn-outline-danger"  routerLink='/home/visitor'>Cancelar</button>
+            </form>
+        </div>
+    </div>
+    
+</div>

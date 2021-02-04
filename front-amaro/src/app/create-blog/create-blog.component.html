@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-5">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Title</span>
+                </div>
+                <input type="text" class="form-control" placeholder="" aria-label="Title" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </div>
+
+    <div class="row rich-text-style">
+        <div class="col-9 col-md-5">
+            <span class="span-rich-text"><button type="button" class="btn btn-light font-weight-bold">Bold</button></span>
+            <span class="span-rich-text"><button type="button" class="btn btn-light font-weight-light">Light</button></span>
+            <span class="span-rich-text"><button type="button" class="btn btn-light font-weight-normal">Normal</button></span>
+            <span class="span-rich-text"><button type="button" class="btn btn-light font-italic ">Italic</button></span>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Content</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea" rows="15" ></textarea>
+                </div>
+        </div>
+    </div>
+
+    <div class="row buttons-style ">
+        <div class="col-4 col-md-1">
+            <button type="button" class="btn btn-success">Guardar</button>
+        </div>
+        <div class="col-4 col-md-1">
+                <button type="button" class="btn btn-outline-danger" routerLink='/home/visitor'>Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
